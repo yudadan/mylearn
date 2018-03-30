@@ -1,0 +1,1 @@
+iptables -A INPUT -i $EXTIF -s 61.135.152.131 -j ACCEPT

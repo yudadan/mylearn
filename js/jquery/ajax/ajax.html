@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jquery</title>
+    
+    <link rel="stylesheet" href="ajax.css"/>
+
+    <style type="text/css">
+    
+    </style>
+    <script src="../jquery.js"></script>
+</head>
+
+<body>
+    <form action="ajax.php?ty=submit">
+        <div class="formStyle">
+            <ul>
+                <li>
+                    <label>标题:</label>
+                    <span class="formText">
+                            <input name="form_title" id="form_title" value="请输入标题" toIndex="1" class="formInput"  exp="empty" tip="标题不能为空">
+                        </span>
+                    <span class="J_ok formRight" style="display:none;">正确</span>
+                    <span class="J_error formErroInfor" style="display:none;"></span>
+                </li>
+                <li>
+                    <div style="position: absolute;"> </div>
+                    <label>学校:</label>
+                    <span class="formText">
+                            <input name="form_xx" id="form_xx" toIndex="2" index="1" class="formInput" exp="empty" tip="不能为空">
+                        </span>
+                    <span class="J_ok formRight" style="display:none;">正确</span>
+                    <span class="J_error formErroInfor" style="display:none;"></span>
+                    <div id="xxdiv" class="overlay-mask"></div>
+                </li>
+                <li>
+                    <label>省份-城市:</label>
+                    <select id="form_province" name="form_province"></select>
+                    <select id="form_city" name="form_city"></select>
+                </li>
+                <li>
+                    <label>兴趣:</label>
+                    读书
+                    <input name="form_xinqu[]" type="checkbox" value="1" /> 足球
+                    <input name="form_xinqu[]" type="checkbox" value="2" /> 投资
+                    <input name="form_xinqu[]" type="checkbox" value="3" />
+                </li>
+                <li>
+                    <label>验证码:</label>
+                    <span class="formText">
+                    <input type="text" name="form_yzm" id="form_yzm" toIndex="3" index="2" class="formInput"  exp="empty" tip="不能为空" />
+                </span>
+                    <span name="ydm" id="yzm"></span>
+                    <span class="J_ok formRight" style="display:none;"></span>
+                    <span class="J_error formErroInfor" style="display:none;"></span>
+                </li>
+                <li>
+                    <label>email地址:</label>
+                    <span class="formText">
+                    <input name="form_email" id="form_email" toIndex="4" index="3" class="formInput"  exp="empty" tip="不能为空" />
+                </span>
+                    <span class="J_ok formRight" style="display:none;"></span>
+                    <span class="J_error formErroInfor" style="display:none;"></span>
+                </li>
+                <li>
+                    <label>联系电话:</label>
+                    <span class="formText">
+                    <input name="form_phone" id="form_phone" toIndex="5" index="4" class="formInput"  exp="empty" tip="不能为空" />
+                </span>
+                    <span class="J_ok formRight" style="display:none;"></span>
+                    <span class="J_error formErroInfor" style="display:none;"></span>
+                </li>
+                <li>
+                    <input type="submit" value="保存" loading="处理中,请稍后">
+                </li>
+            </ul>
+        </div>
+    </form>
+    <div class="publicBox" id="successPanel" style="display:none;">
+        <!--pbIn-->
+        <div class="pbIn">
+            <span class="ssIco J_successClose">关闭图标</span>
+            <!--successBox-->
+            <div class="successBox">
+                <span class="cgIco">√</span>
+                <h2>您的信息已提交！</h2>
+            </div>
+            <!--successBox end-->
+            <div class="submitBox">
+                <input type="button" value="关闭" class="subIco J_successClose" name="">
+            </div>
+        </div>
+        <!--pbIn end-->
+    </div>
+</body>
+
+<script src="ajax.js"></script>
+
+<script type="text/javascript">
+
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+ .table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .table-bordered {
+        border: 1px solid #dddddd;
+        border-collapse: separate;
+        border-left: 0;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    
+    .table-bordered th,
+    .table-bordered td {
+        border-left: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .table th {
+        font-weight: bold;
+    }
+    
+    .move {
+        cursor: crosshair;
+    }
+    
+    .selected {
+        background: yellow;
+        color: red;
+    }

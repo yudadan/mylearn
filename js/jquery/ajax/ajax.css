@@ -1,0 +1,134 @@
+input {
+        resize: none;
+        outline: none;
+    }
+    
+    .overlay-mask {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 50px;
+        left: 10px;
+        zIndex: 10;
+        display: none;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-top-color: #d9d9d9;
+    }
+    
+    .submitBox {}
+    
+    .subIco {
+        cursor: pointer;
+        display: block;
+        padding: 0px;
+        margin: 0px auto;
+        width: 120px;
+        border: 0px;
+        height: 26px;
+        text-align: center;
+        line-height: 24px;
+        color: #fff;
+        font-size: 12px;
+        background: #2E79BC;
+    }
+    
+    .publicBox {
+        position: absolute;
+        left: 50%;
+        top: 200px;
+        z-index: 500;
+        width: 530px;
+        margin-left: -265px;
+        background: #F1F6FC;
+    }
+    
+    .pbIn {
+        position: relative;
+        padding: 10px;
+    }
+    
+    .pbIn .submitBox {
+        padding: 0px 0px 15px;
+    }
+    
+    .pbIn .submitBox .subIco {
+        width: 86px;
+        font-size: 14px;
+    }
+    
+    .ssIco {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 41px;
+        height: 41px;
+        background: url(img/closeBtn.png) no-repeat;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+    
+    .cgIco {
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 0px auto;
+        text-indent: -99999px;
+        background: url(img/successIco8.png) no-repeat;
+    }
+    
+    .successBox {
+        padding: 5px 0px 0px;
+    }
+    
+    .successBox h2 {
+        padding: 8px 0px 20px;
+        text-align: center;
+        color: #2d79bc;
+        font-size: 17px;
+        font-weight: normal;
+    }
+    
+    .successBox p {
+        padding: 0px 140px 30px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #666;
+    }
+    
+    .successBox p span {
+        color: #2d79bc;
+    }
+    
+    .successBox p.tac {
+        text-align: center;
+    }
+    
+    .master {
+        position: absolute;
+        z-index: 100;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 2530px;
+        background: #000;
+        filter: alpha(opacity=40);
+        opacity: 0.4;
+    }
+    
+    ul li {
+        list-style: none;
+    }
+    
+    .formStyle ul li.current .formText {
+        border: 1px solid blue;
+        margin: 10px;
+    }
+    
+    .formStyle ul li.error .formText {}
+    
+    .formInput {
+        padding: 2px;
+        border: 1px solid black;
+    }

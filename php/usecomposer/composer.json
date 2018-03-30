@@ -1,0 +1,20 @@
+{
+    "name": "ywdblog/phpcomposer",
+    "description": "ywdblog composer package",
+  
+    "require": {
+        "php": ">=5.3.1"
+         
+    },
+       "autoload": {
+   		"classmap": ["othsrc/","classsrc.php"],
+                "files": ["othsrc/filesrc.php"],
+		 "psr-4": {"Foo\\Bar\\": "src"}
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
